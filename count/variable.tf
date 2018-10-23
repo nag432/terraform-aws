@@ -36,3 +36,8 @@ variable "count_workers" {
     description = "Resource count of workers"
     default = "2"
 }
+variable "security_groups" {
+    type = "string"
+    description = "Resource of security groups"
+    default = "sg-067a4b1068454d531"
+}

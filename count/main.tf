@@ -7,6 +7,7 @@ resource "aws_instance" "Brokers" {
  subnet_id = "${var.subnet_id}"
  ami = "${var.ami}"
  instance_type = "${var.instance_type}"
+ security_groups = [ "${var.security_groups}" ]
  tags {
   Name = "Broker"
  }
@@ -17,6 +18,7 @@ resource "aws_instance" "Workers" {
  subnet_id = "${var.subnet_id}"
  ami = "${var.ami}"
  instance_type = "${var.instance_type}"
+ security_groups = [ "${var.security_groups}" ] 
  tags {
   Name = "Worker"
  }
