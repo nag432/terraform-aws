@@ -31,6 +31,8 @@ should now work.
 If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
+
 change the Access key ID and secret key
+
 terraform plan
 terraform apply
